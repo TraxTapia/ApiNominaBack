@@ -1,0 +1,13 @@
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.AssemblyInfoInputs.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.AssemblyInfo.cs
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.csproj.CoreCompileInputs.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\bin\Debug\netcoreapp3.1\Api.Negocio.Nomina.deps.json
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\bin\Debug\netcoreapp3.1\Api.Negocio.Nomina.dll
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\bin\Debug\netcoreapp3.1\Api.Negocio.Nomina.pdb
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\bin\Debug\netcoreapp3.1\Api.Models.Nomina.dll
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\bin\Debug\netcoreapp3.1\Api.Models.Nomina.pdb
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.csproj.CopyComplete
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.dll
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Negocio.Nomina\obj\Debug\netcoreapp3.1\Api.Negocio.Nomina.pdb

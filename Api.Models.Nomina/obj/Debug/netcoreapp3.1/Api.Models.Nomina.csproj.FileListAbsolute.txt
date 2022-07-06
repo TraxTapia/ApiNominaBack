@@ -1,0 +1,10 @@
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\bin\Debug\netcoreapp3.1\Api.Models.Nomina.deps.json
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\bin\Debug\netcoreapp3.1\Api.Models.Nomina.dll
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\bin\Debug\netcoreapp3.1\Api.Models.Nomina.pdb
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.AssemblyInfoInputs.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.AssemblyInfo.cs
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.csproj.CoreCompileInputs.cache
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.dll
+C:\Users\ivan.tapia\source\Examen Prueba\Seguridad.Api\Api.Models.Nomina\obj\Debug\netcoreapp3.1\Api.Models.Nomina.pdb

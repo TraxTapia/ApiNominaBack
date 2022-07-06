@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cf0d528c-4ea3-4679-9400-f03b34c1084d": {
+      "ProjectGuid": "cf0d528c-4ea3-4679-9400-f03b34c1084d",
+      "DisplayName": "Seguridad.Api",
+      "ColorIndex": 0
+    },
+    "7999f7a4-3e2e-4f2a-b1b5-f14de638b810": {
+      "ProjectGuid": "7999f7a4-3e2e-4f2a-b1b5-f14de638b810",
+      "DisplayName": "Api.Negocio.Nomina",
+      "ColorIndex": 1
+    },
+    "dd71e3bc-6aed-4c93-98e1-71c0553c4342": {
+      "ProjectGuid": "dd71e3bc-6aed-4c93-98e1-71c0553c4342",
+      "DisplayName": "Api.Models.Nomina",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
