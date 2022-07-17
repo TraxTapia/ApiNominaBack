@@ -832,7 +832,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Api.Models.Nomina.dll": {}
@@ -3320,7 +3321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
       }
     }
   }

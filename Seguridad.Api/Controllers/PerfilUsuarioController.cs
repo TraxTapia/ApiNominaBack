@@ -22,11 +22,11 @@ namespace Seguridad.Api.Controllers
             apiCore = new ApiCore(_appSettings);
         }
         [HttpPost]
-       [Route("Api/userProfile")]
-       public GetListProfileUserResponseDTO ObtenerPerfilUsuario(ProfileUserRequestDTO _Request)
+        [Route("Api/userProfile")]
+        public GetListProfileUserResponseDTO ObtenerPerfilUsuario(ProfileUserRequestDTO _Request)
         {
             GetListProfileUserResponseDTO _Response = new GetListProfileUserResponseDTO();
-       
+
             try
             {
                 if (!ModelState.IsValid)
@@ -35,11 +35,11 @@ namespace Seguridad.Api.Controllers
                     _Response.Result.SetStatusCode(OperationResult.StatusCodesEnum.BAD_REQUEST);
                     _Errors.ForEach(x => { if (x.Exception == null) _Response.Result.AddException(new Exception(x.ErrorMessage)); else _Response.Result.AddException(x.Exception); });
                 }
-              
+
                 _Response = apiCore.GetPerfilsUsers(_Request.UserName, _Request.keyCodeRol);
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 _Response.Result.SetStatusCode(OperationResult.StatusCodesEnum.INTERNAL_SERVER_ERROR);
                 _Response.Result.AddException(ex);

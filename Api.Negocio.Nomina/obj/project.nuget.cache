@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MwlS1TNQivrMXggugUuDkoK2i/iUUtlG47P+U5Bt/EE0KmknSvDVIgFxAr2nNbWFPovPAlL7snM0uD8M3/lPgQ==",
+  "dgSpecHash": "B4BPeGs6rWiXjsKIk+tk3q0XhVAPcr0hvnqOZbJiChcvz26o9mtgX2Zlrp1F9A8IqjdDMyfUP9aEiDP6NhS9jQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ivan.tapia\\source\\Examen Prueba\\Seguridad.Api\\Api.Negocio.Nomina\\Api.Negocio.Nomina.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\ivan.tapia\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.5.0\\runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

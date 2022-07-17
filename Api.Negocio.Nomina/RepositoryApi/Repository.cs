@@ -1,6 +1,9 @@
 ﻿using Api.Models.Nomina.Api;
+using Api.Models.Nomina.Api.Response;
 using Api.Models.Nomina.DBContexNomina;
+using Api.Models.Nomina.NominaDBCtxt;
 using Api.Models.Nomina.Settings;
+using Bsase_Datos_Model.Nomina;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;
@@ -62,8 +65,6 @@ namespace Api.Negocio.Nomina.RepositoryApi
             }
             return _lista;
         }
-
-
         public List<UsuarioDTO> GetRolesByUser(string _UserName, int _IdAplicacion)
         {
             List<UsuarioDTO> _List = new List<UsuarioDTO>();
@@ -100,7 +101,6 @@ namespace Api.Negocio.Nomina.RepositoryApi
                                       NombreItem = om.descripcion_item
                                   }).ToList();
                     return _List = _List1.ToList();
-
                 }
                 else
                 {
@@ -113,7 +113,7 @@ namespace Api.Negocio.Nomina.RepositoryApi
                                   join estatus in _Context.CAT_ESTATUS_USR on user.id_estatus_usr equals estatus.Id
                                   join mapp in _Context.MODULO_APP on app.Id equals mapp.id_app
                                   join om in _Context.OPCION_MODULO on mapp.id_padre equals om.id_modulo
-                                  where user.usuario1 == _UserName 
+                                  where user.usuario1 == _UserName
                                   select new UsuarioDTO()
                                   {
                                       Id = user.Id,
@@ -142,5 +142,215 @@ namespace Api.Negocio.Nomina.RepositoryApi
 
         }
 
+        public async Task<List<C_AST_011>> GetEmpleados()
+        {
+            List<C_AST_011> _List = new List<C_AST_011>();
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                _List = await _Context.C_AST_011.AsNoTracking().Where(x => x.U_STAT == "A").ToListAsync();
+
+            }
+            return _List;
+        }
+        public async Task<List<C_AST_001>> GetListCompanias()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_001.AsNoTracking().ToListAsync();
+            }
+
+        }
+        public async Task<List<C_AST_701>> GetListLocalidades()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_701.AsNoTracking().ToListAsync();
+            }
+
+        }
+        public async Task<List<C_AST_704>> GetCatalogoCategoria()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_704.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_132>> GetCatPrestaciones()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_132.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_709>> GetCveContables()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_709.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_737>> GetCatHorarios()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_737.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_708>> GetCatBancos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_708.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_711>> GetCodReservado1()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_711.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_712>> GetCodReservado2()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_712.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_713>> GetCodReservado3()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_713.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_714>> GetCodReservado4()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_714.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_715>> GetCodReservado5()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_715.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_716>> GetCodReservado6()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_716.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_717>> GetCodReservado7()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_717.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_718>> GetCodReservado8()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_718.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_705>> GetTipoContratos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_705.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_722>> GetCatDirecciones()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_722.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_747>> GetCatSubdirecciones()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_747.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_723>> GetCatDepartamentos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_723.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_702>> GetCatPuestos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_702.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_754>> GetCatetgoriaSueldos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_754.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_706>> GetTurnos()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_706.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_142>> GetCveRegistroPatronal()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_142.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_F11>> GetCentroBeneficios()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_F11.AsNoTracking().ToListAsync();
+
+            }
+        }
+        public async Task<List<C_AST_703>> GetTipoNomina()
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_703.AsNoTracking().ToListAsync();
+
+            }
+        }
     }
 }
