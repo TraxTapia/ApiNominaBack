@@ -6,6 +6,7 @@ using Api.Models.Nomina.Enum;
 using Api.Models.Nomina.OperationResult;
 using Api.Models.Nomina.Settings;
 using Api.Negocio.Nomina.RepositoryApi;
+using Bsase_Datos_Model.Nomina;
 using GRC.Autenticacion.Entidades;
 using Microsoft.Extensions.Options;
 using System;
@@ -43,7 +44,6 @@ namespace Api.Negocio.Nomina.Core
 
             return _Response;
         }
-
         public async Task<ObtenerListEmpleadosResponseDTO> ObtenerEmpleados()
         {
             ObtenerListEmpleadosResponseDTO _Response = new ObtenerListEmpleadosResponseDTO();
@@ -383,6 +383,19 @@ namespace Api.Negocio.Nomina.Core
                 Code = x.Code,
                 Name = x.Name,
             }).ToList();
+            return _Response;
+        }
+
+
+        public async Task<OperationResult> DeleteEmployerByCode(string _Code, string _Status)
+        {
+            OperationResult _Response = new OperationResult();
+            C_AST_011 _UpdateData = new C_AST_011();
+            Repository repository = new Repository(appSettings);
+            _UpdateData = await repository.FindUserByCode(_Code);
+            if (_UpdateData == null) throw new Exception("No se encontro el empleado a eliminar");
+            _UpdateData.U_STAT = "B";
+            repository.Actualizar(_UpdateData);
             return _Response;
         }
 

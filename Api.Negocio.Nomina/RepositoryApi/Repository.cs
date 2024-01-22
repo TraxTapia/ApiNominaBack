@@ -29,6 +29,31 @@ namespace Api.Negocio.Nomina.RepositoryApi
         {
             _cadenaConexion = connectionString;
         }
+        public void Add<T>(T Register) where T : class
+        {
+            using (DBContextNominaCTX _SaseDbContext = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["ConnNomina"]))
+            {
+                _SaseDbContext.Set<T>().Add(Register);
+                _SaseDbContext.SaveChanges();
+            }
+        }
+        public void Actualizar<T>(T _entidad) where T : class
+        {
+            using (DBContextNominaCTX _NominaDbContext = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["ConnNomina"]))
+            {
+                _NominaDbContext.Entry(_entidad).State = EntityState.Modified;
+                _NominaDbContext.SaveChanges();
+                //haycambios = false;
+            }
+        }
+        public void Update<T>(T Register) where T : class
+        {
+            using (DBContextNominaCTX _NominaDbContext =new  DBContextNominaCTX(appSettings.Value.ConnectionStrings["ConnNomina"]))
+            {
+                _NominaDbContext.Entry(Register).State = EntityState.Modified;
+                _NominaDbContext.SaveChanges();
+            }
+        }
 
         public async Task<List<CAT_APP>> GetCatAppUser(int _IdApp)
         {
@@ -352,5 +377,14 @@ namespace Api.Negocio.Nomina.RepositoryApi
 
             }
         }
+        public async Task<C_AST_011> FindUserByCode(string _Code)
+        {
+            using (DBContextNominaCTX _Context = new DBContextNominaCTX(appSettings.Value.ConnectionStrings["Nomina"]))
+            {
+                return await _Context.C_AST_011.AsNoTracking().FirstOrDefaultAsync(x => x.Code.Equals(_Code));
+
+            }
+        }
+
     }
 }
