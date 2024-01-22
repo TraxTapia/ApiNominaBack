@@ -4,7 +4,6 @@ namespace Bsase_Datos_Model.Nomina
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("@AST_T15")]
     public partial class C_AST_T15

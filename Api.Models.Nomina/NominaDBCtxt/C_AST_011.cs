@@ -43,6 +43,7 @@ namespace Bsase_Datos_Model.Nomina
         public string DataSource { get; set; }
 
         [StringLength(1)]
+        [Column("U_STAT")]
         public string U_STAT { get; set; }
 
         public string U_APEPAT { get; set; }
